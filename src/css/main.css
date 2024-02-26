@@ -1,0 +1,7 @@
+html {
+  overflow-y: scroll;
+}
+
+.col-lg-4, .col-md-6, .col-sm-12{
+    padding-bottom: 1em;
+}
