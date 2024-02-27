@@ -3,5 +3,9 @@ html {
 }
 
 .col-lg-4, .col-md-6, .col-sm-12{
-    padding-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.container {
+  padding-bottom: 1em;
 }
