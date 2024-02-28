@@ -2,6 +2,69 @@ html {
   overflow-y: scroll;
 }
 
+header {
+  position: fixed; /* ヘッダーを固定位置に設定 */
+  top: 0; /* 画面の上端から0の位置に設定 */
+  width: 100%; /* ヘッダーの幅を画面全体に広げる */
+  z-index: 1000; /* 他の要素よりも前面に表示 */
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  background-color: #03ad2daf;
+  color: white;
+  padding: 10px 50px;
+  position: sticky;
+}
+
+header .logo {
+  font-size: 15px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+header .twitter-button {
+  margin-left: auto; /* ナビゲーションとフォローボタンの間を最大限に空けます */
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+  header {
+      flex-direction: column;
+  }
+
+  header nav ul {
+      flex-direction: column;
+      width: 100%;
+  }
+  
+  header nav ul li a {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  header .twitter-button {
+      order: 3; /* レスポンシブデザインでの配置順序を調整 */
+      width: 100%;
+      text-align: center;
+      margin-top: 10px; /* ナビゲーションメニューとの間隔 */
+  }
+}
+
+body {
+  background-color: #eee;
+}
+
 .col-lg-4, .col-md-6, .col-sm-12{
   padding-bottom: 1em;
 }
