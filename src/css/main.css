@@ -8,7 +8,7 @@ header {
   width: 100%; /* ヘッダーの幅を画面全体に広げる */
   z-index: 1000; /* 他の要素よりも前面に表示 */
   display: flex;
-  
+
   justify-content: space-between;
   align-items: center;
   background-color: #03ad2daf;
@@ -17,8 +17,8 @@ header {
   position: sticky;
 }
 
-header .logo {
-  font-size: 15px;
+header .logo h1 {
+  font-size: 2rem;
 }
 
 header nav ul {
