@@ -70,5 +70,21 @@ body {
 }
 
 .container {
-  padding-bottom: 1em;
+  padding: 1em;
+}
+
+button.prism {
+  border: 0px solid;
+  color: #eee;
+  -webkit-text-stroke: 1px rgba(216, 112, 147, 0.76) ;
+  font-weight: bold;
+  background-image: linear-gradient(2.68344rad, rgb(255, 133, 255), rgb(133, 222, 255));
+}
+
+button.prism:hover{
+  color: palevioletred;
+}
+
+a.btn {
+  margin: 1em;
 }
